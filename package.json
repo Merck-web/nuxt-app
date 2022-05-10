@@ -8,6 +8,11 @@
     "start": "nuxt start"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.1"
+    "autoprefixer": "^10.4.4",
+    "node-sass": "^6.0.1",
+    "nuxt": "3.0.0-rc.1",
+    "postcss": "^8.4.12",
+    "sass": "^1.50.0",
+    "sass-loader": "^10.2.1"
   }
 }
