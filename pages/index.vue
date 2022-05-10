@@ -131,8 +131,8 @@ export default {
   },
   beforeMount() {
     this.importGsap();
-    this.importDraggable();
-    this.importInert();
+    // this.importDraggable();
+    // this.importInert();
   },
   mounted() {
     this.importDraggable();
