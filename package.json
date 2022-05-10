@@ -16,6 +16,9 @@
     "sass-loader": "^10.2.1"
   },
   "dependencies": {
+    "esbuild": "^0.14.38",
+    "global": "^4.4.0",
+    "install": "^0.13.0",
     "uuid": "^8.3.2"
   }
 }
