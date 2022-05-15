@@ -1,100 +1,25 @@
 <template>
   <body>
-    <!-- <p v-for="item in stats" :key="item.id">
-      <span> {{ item.title }} </span>
-    </p> -->
-    <h1 class="header">Architecture <span>Loading...</span></h1>
+    <client-only>
+    <h1 class="header">Cats <span>Loading...</span></h1>
+    </client-only>
 
-    <div class="gallery">
-      <div class="gallery__item"><img src="img/1.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/2.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/3.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/4.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/5.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/6.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/7.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/8.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/9.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/10.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/11.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/12.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/13.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/14.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/15.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/16.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/17.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/18.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/19.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/20.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/1.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/2.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/3.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/4.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/5.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/6.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/7.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/8.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/9.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/10.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/11.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/12.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/13.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/14.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/15.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/16.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/17.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/18.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/19.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/20.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/1.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/2.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/3.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/4.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/5.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/6.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/7.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/8.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/9.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/10.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/11.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/12.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/13.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/14.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/15.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/16.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/17.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/18.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/19.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/20.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/1.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/2.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/3.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/4.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/5.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/6.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/7.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/8.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/9.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/10.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/11.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/12.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/13.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/14.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/15.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/16.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/17.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/18.jpg" alt="Alt" /></div>
-      <div class="gallery__item"><img src="img/19.jpg" alt="Alt" /></div>
+    <div id="gallery" class="gallery">
+      <div v-for="cat in stats" :key="cat.id" class="gallery__item">
+        <img :src="cat.url" :alt="cat.url" />
+      </div>
     </div>
   </body>
 </template>
 
 <script setup>
 const { data: stats } = await useAsyncData("stats", () =>
-  $fetch("https://jsonplaceholder.typicode.com/posts")
+  $fetch("https://api.thecatapi.com/v1/images/search?limit=100", {
+    "x-api-key": "fe055ebb-1c00-4370-84ae-158fba71d480",
+  })
 );
 
-console.log(stats.value[1].title);
+console.log(stats.value);
 </script>
 <script>
 export default {
@@ -121,7 +46,9 @@ export default {
         if (window.matchMedia("(min-width: 992px)").matches) {
           // If not mobile
 
-          Draggable.create(".gallery", {
+          const gallery = document.querySelector(".gallery");
+
+          Draggable.create("#gallery", {
             bounds: "body",
             inertia: true,
           });
