@@ -12,6 +12,17 @@ export default defineNuxtConfig({
         { name: "format-detection", content: "telephone=no" },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      script: [
+        {
+          src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js",
+        },
+        {
+          src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js",
+        },
+        {
+          src: "./assets/js/InertiaPlugin.min.js",
+        },
+      ],
     },
   },
 
@@ -33,6 +44,7 @@ export default defineNuxtConfig({
 
   build: {
     transpile: [
+      ["gsap"],
       // 'vue-carousel'
     ],
     loaders: {

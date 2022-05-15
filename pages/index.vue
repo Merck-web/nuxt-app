@@ -1,12 +1,13 @@
 <template>
   <body>
     <client-only>
-    <h1 class="header">Cats <span>Loading...</span></h1>
+      <h1 class="header">Cats <span>Loading...</span></h1>
     </client-only>
-
-    <div id="gallery" class="gallery">
-      <div v-for="cat in stats" :key="cat.id" class="gallery__item">
-        <img :src="cat.url" :alt="cat.url" />
+    <div class="gallery__box">
+      <div id="gallery" class="gallery">
+        <div v-for="cat in stats" :key="cat.id" class="gallery__item">
+          <img :src="cat.url" :alt="cat.url" />
+        </div>
       </div>
     </div>
   </body>
@@ -19,26 +20,18 @@ const { data: stats } = await useAsyncData("stats", () =>
   })
 );
 
-console.log(stats.value);
+// console.log(stats.value);
 </script>
 <script>
+// typical import
+import { gsap } from "gsap";
+import { Draggable } from "gsap/Draggable";
+
+if (process.client) {
+  gsap.registerPlugin(Draggable);
+}
 export default {
   methods: {
-    importGsap() {
-      let first = document.createElement("script");
-      first.setAttribute("src", "assets/js/gsap.min.js");
-      document.head.appendChild(first);
-    },
-    importDraggable() {
-      let second = document.createElement("script");
-      second.setAttribute("src", "assets/js/Draggable.min.js");
-      document.head.appendChild(second);
-    },
-    importInert() {
-      let third = document.createElement("script");
-      third.setAttribute("src", "assets/js/InertiaPlugin.min.js");
-      document.head.appendChild(third);
-    },
     gras() {
       setTimeout(function () {
         document.body.classList.add("loaded");
@@ -46,24 +39,15 @@ export default {
         if (window.matchMedia("(min-width: 992px)").matches) {
           // If not mobile
 
-          const gallery = document.querySelector(".gallery");
-
-          Draggable.create("#gallery", {
-            bounds: "body",
+          Draggable.create(".gallery__box", {
+            bounds: ".gallery",
             inertia: true,
           });
         }
       }, 200);
     },
   },
-  beforeMount() {
-    this.importGsap();
-    this.importDraggable();
-    this.importInert();
-  },
   mounted() {
-    this.importDraggable();
-    this.importInert();
     this.gras();
   },
 };
