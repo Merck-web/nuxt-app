@@ -25,7 +25,7 @@ const { data: stats } = await useAsyncData("stats", () =>
 <script>
 // typical import
 import { gsap } from "gsap";
-import { Draggable } from "gsap/Draggable";
+import { Draggable } from 'gsap/all';
 
 if (process.client) {
   gsap.registerPlugin(Draggable);

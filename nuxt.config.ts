@@ -13,15 +13,15 @@ export default defineNuxtConfig({
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
       script: [
-        {
-          src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js",
-        },
-        {
-          src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js",
-        },
-        {
-          src: "./assets/js/InertiaPlugin.min.js",
-        },
+        // {
+        //   src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js",
+        // },
+        // {
+        //   src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js",
+        // },
+        // {
+        //   src: "./assets/js/InertiaPlugin.min.js",
+        // },
       ],
     },
   },
