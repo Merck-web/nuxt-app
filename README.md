@@ -1,42 +1,44 @@
-# Nuxt 3 Minimal Starter
+<div>
+    <img src="https://www.eazypau.com/_nuxt/favicon-wb.png" alt="favicon" width="100"/>
+</div>
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+# Personal Portfolio Website
+A personal porfolio website built with Nuxt3 and tailwindCSS
 
-## Setup
+## Technologies used
+- [Nuxt 3](https://v3.nuxtjs.org/) 
+- [TailwindCSS](https://tailwindcss.com/)
+- [Heroicons](https://vue-hero-icons.netlify.app/)
+- [Headlessui/vue](https://headlessui.dev/)
+- [Eslint](https://eslint.org/)
+- [GSAP](https://greensock.com/docs/v3/GSAP)
+- [SASS](https://sass-lang.com/)
 
-Make sure to install the dependencies:
-
+## Build Setup
 ```bash
-# yarn
-yarn install
+# install dependencies
+$ npm install
 
-# npm
-npm install
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-# pnpm
-pnpm install --shamefully-hoist
+# build for production and preview
+$ npm run build
+$ npm run start
+
 ```
 
-## Development Server
+## Deployment
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://www.netlify.com/)
 
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
+## Tools, Resources and References
+- [Favicon Generator](https://favicon.io/favicon-generator/)
+- [Resume maker](https://resumake.io/)
+- [Image file extension converter](https://convertio.co/jpg-webp/)
+- [Coolors - Trending Color Palettes](https://coolors.co/palettes/trending)
+- [How to trigger a file download when clicking an HTML button or JavaScript](https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/)
+- [Stagger animation using GSAP in Vuejs | Vue animation](https://www.youtube.com/watch?v=qk7Xj4Q0IuE&ab_channel=TheDevEnv)
+- [Web Design for Web Developers: Build Beautiful Websites!](https://www.udemy.com/course/web-design-secrets/)
+- [Learn our UX/UI process - Real client project](https://www.youtube.com/watch?v=gRqHEjATSCE&ab_channel=Malewicz)
+- [Beautiful, High-Resolution No Cost Stock Images](https://negativespace.co/)
+- [15 Web Developer Portfolios to Inspire You](https://www.freecodecamp.org/news/15-web-developer-portfolios-to-inspire-you-137fb1743cae/)

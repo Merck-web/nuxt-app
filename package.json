@@ -1,25 +1,28 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt generate",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "start": "nuxt start"
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint --ext \".ts,.js,.vue\" --ignore-path .gitignore ."
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.4",
-    "node-sass": "^6.0.1",
-    "nuxt": "3.0.0-rc.1",
-    "postcss": "^8.4.12",
-    "sass": "^1.50.0",
-    "sass-loader": "^10.2.1"
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-nuxt": "^3.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^7.12.1",
+    "nuxt": "^3.0.0-rc.1",
+    "postcss": "^8.3.11",
+    "prettier": "^2.5.1",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "tailwindcss": "^3.0.8"
   },
   "dependencies": {
-    "esbuild": "^0.14.38",
-    "global": "^4.4.0",
-    "gsap": "^3.10.4",
-    "install": "^0.13.0",
-    "uuid": "^8.3.2"
+    "@headlessui/vue": "^1.4.2",
+    "@heroicons/vue": "^1.0.5",
+    "gsap": "^3.9.1"
   }
 }

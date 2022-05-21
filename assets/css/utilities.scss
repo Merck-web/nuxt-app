@@ -1,0 +1,74 @@
+// reference from: https://www.developerdrive.com/how-to-easily-use-google-fonts-with-sass/
+// @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"); // looks slightly distorted in chrome
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+.subFontFamily {
+	// font-family: 'Lato', sans-serif;
+	font-family: "Raleway", sans-serif;
+}
+.headerFont {
+	font-family: "Montserrat", sans-serif;
+}
+.logoFont {
+	font-family: "Carter One", cursive;
+}
+
+.navPadding {
+	padding: 15px 30px;
+}
+@media (min-width: 768px) {
+	.navPadding {
+		padding: 15px 50px;
+	}
+}
+@media (min-width: 1024px) {
+	.navPadding {
+		padding: 15px 108px;
+	}
+}
+@media (min-width: 1440px) {
+	.navPadding {
+		padding: 15px 160px;
+	}
+}
+@media (min-width: 1536px) {
+	.navPadding {
+		padding: 15px 200px;
+	}
+}
+@media (min-width: 1660px) {
+	.navPadding {
+		padding: 15px 260px;
+	}
+}
+.contactSectionHeight {
+	height: auto;
+  }
+  @media (min-width: 768px) {
+	.contactSectionHeight {
+	  height: calc(100vh - 173px);
+	}
+  }
+/* width */
+::-webkit-scrollbar {
+	width: 7px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background-color: #000000;
+	border-radius: 5px;
+	opacity: 0.2;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #9ca3af;
+}
+
+// bg colors
+$bg-light: #f8f9fa; // f8f9fa
