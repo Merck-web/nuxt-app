@@ -6,7 +6,7 @@
     <div class="gallery__box">
       <div id="gallery" class="gallery">
         <div v-for="cat in stats" :key="cat.id" class="gallery__item">
-          <img :src="cat.url" :alt="cat.url" />
+          <img :src="cat.url" :alt="cat.url"/>
         </div>
       </div>
     </div>
