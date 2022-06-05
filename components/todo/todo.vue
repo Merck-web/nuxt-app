@@ -61,6 +61,10 @@ export default {
       completeList: [],
     };
   },
+  mounted() {
+    this.needDoList = JSON.parse(localStorage.getItem("needDoList")) || [];
+    this.completeList = JSON.parse(localStorage.getItem("completeList")) || [];
+  },
   methods: {
     handleInput(event) {
       this.valueInput = event.target.value;
@@ -73,12 +77,21 @@ export default {
         title: this.valueInput,
         id: Math.random(),
       });
+      localStorage.setItem("needDoList", JSON.stringify(this.needDoList));
       this.valueInput = "";
     },
     doCheck(index, type) {
       if (type === "need") {
         const completeMask = this.needDoList.splice(index, 1);
         this.completeList.push(...completeMask);
+        localStorage.removeItem(
+          "needDoList",
+          JSON.stringify(completeMask[0].id)
+        );
+        localStorage.setItem(
+          "completeList",
+          JSON.stringify(completeMask[0].id)
+        );
       } else {
         const noCompleteMask = this.completeList.splice(index, 1);
         this.needDoList.push(...noCompleteMask);
@@ -87,6 +100,7 @@ export default {
     removeMask(index, type) {
       const toDoList = type === "need" ? this.needDoList : this.completeList;
       toDoList.splice(index, 1);
+      localStorage.removeItem("completeList", JSON.stringify(toDoList[0].id));
     },
   },
 };
