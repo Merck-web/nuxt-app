@@ -26,10 +26,20 @@ module.exports = {
       },
       maxWidth: {
         xxs: "16rem",
+        container: "1440px",
       },
       screens: {
         iphone: "414px",
         "3xl": "1680px",
+      },
+      boxShadow: {
+        enter: "0 90px 150px rgb(108 73 172 / 15%)",
+      },
+      gap: {
+        cardGap: "clamp(1rem,2vw,30px)",
+      },
+      gridTemplateColumns: {
+        cardColumns: "repeat(auto-fit,minmax(338px,1fr))",
       },
     },
   },
